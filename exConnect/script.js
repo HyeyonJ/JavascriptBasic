@@ -1,0 +1,1 @@
+document.write("외부 스트립트 방법");
