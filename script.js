@@ -77,16 +77,48 @@ switch(food){
         break;
 }
 
-//let num = 1;
-while(true) {
-    console.log(num);
-    if(num > 5) {
-        breakl
-    }
-    num++;
+// if문과 조건식
+let score = 90;
+if(score >= 90) {
+    console.log("A++ 학점");
 }
 
+// 무한 반복문
+let num8 = 1;
+while(num8 <= 9999){
+    console.log(num8);
+     num8++; // 코드가 한 번 반복될 때마다 num8 변수를 1씩 증가
+}
 
+let num9 = 1;
+while(true) {
+    console.log(num9);
+    if(num9 > 5) {
+        breakl
+    }
+    num9++;
+}
+
+// do while 문
+// do {//블록문} while(조건식);
+
+do {
+    console.log("무조건");
+    console.log("한 번은 실행");
+} while(false);
+
+// for문과 배열
+let arr = ["banana", "apple", "orange"];
+for(let i = 0; i < arr.length; i++){
+    console.log(arr[i]);
+}
+
+// for .. in 
+// for(가변수 in 배열/객체 리터럴){//블록문}
+let obj1 = {name: "철수", age:"20"};
+for(let key in obj1){
+    console.log(key + ":" + obj1[key]);
+}
 
 let obj = {
     name: "철수", 
@@ -100,4 +132,22 @@ console.log(obj.name);
 
 for (let key in obj) {
     console.log(key);
+}
+
+// 배열을 반복
+let arr2 = ["orange", "banana", "apple"];
+for(let index in arr2){
+    console.log(index + ":" + arr[index]);
+}
+
+// break : 반복문 종료
+for(let i = 0; i < 10; i++){
+    console.log(i);
+    if(i === 5) break;
+}
+
+// continue 문 : 반복문 건너뛰고 실행하는 명령
+for(let i = 1; i <= 10; i++){
+    if(i % 2 === 1) continue;
+    console.log(i);
 }
