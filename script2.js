@@ -28,12 +28,26 @@ function gugudan3(dan) {
 }
 gugudan3(3);
 
-const funcGugudan6 = (dan) => { //함수에 담는거 처럼!
+const funcGugudan1 = (dan) => { //함수에 담는거 처럼!
     for(let i = 1; i <=9; i++) {
         console.log(`${dan} * ${i} = ${dan *i}`);
     }
 };
-funcGugudan6(6);
+funcGugudan6(1);
+
+
+// 2. 함수 표현식으로 함수 정의하기
+// 함수 : 객체에서 파생된 자료형.
+// 함수도 변수에 할당 가능함. 이를 이용한 함수 정의 방법 -> 함수 표현식
+// const 변수명 = function(){}; 익명함수
+// const 변수명 = function 식별자(){}; 네이밍 함수 // 변수명으로 호출하기
+
+const gugudan2 = function gugudan(){
+    for(let i = 1; i<=9; i++){
+        console.timeLog(`3*${3*i}`);
+    }
+};
+gugudan2(); // 함수 호출
 
 
 // 매개변수 처리하는 방법
