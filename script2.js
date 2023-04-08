@@ -49,6 +49,29 @@ const gugudan2 = function gugudan(){
 };
 gugudan2(); // 함수 호출
 
+// 3. 화살표 함수로 함수 정의하기 () => {};
+
+const gugudan5 = () => {
+    for(let i = 1; i <= 9; i++){
+        console.log(`3*${i} = ${3*i}`);
+    }
+};
+gugudan5();
+
+///// 함수 확장하기
+
+// 1. 매개변수와 인수
+function gugudan6(){
+    for(let i; i<= 9; i++){
+        console.log(`5*${i} = ${5*i}`);
+    }
+}
+function gugudan8(){
+    for(let i=1; i<= 9; i++){
+        console.log(`8 * ${i} = ${8*i}`);
+    }
+}
+
 
 // 매개변수 처리하는 방법
 // num1, num2 파라미터? 라는거 사용법에 맞게 sum이라는 것을 호출 시 부르는
