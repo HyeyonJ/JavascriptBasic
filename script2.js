@@ -72,6 +72,11 @@ function gugudan8(){
     }
 }
 
+//2. 즉시실행함수 
+const init = function(){
+    console.log("initialized!");
+}
+
 
 // 매개변수 처리하는 방법
 // num1, num2 파라미터? 라는거 사용법에 맞게 sum이라는 것을 호출 시 부르는
