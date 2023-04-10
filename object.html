@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 객체는 모든 자료형의 데이터를 값으로 가짐 -->
+    <script>
+        const person = {
+            name:["Hong", "Gildong"], // 배열
+            age:20, // 숫자
+            isAdult:true //논리 데이터
+        };
+        const person2 = {
+            name: {     // 객체 안에 또 다른 객체
+                firstName:"Gildong",
+                lastname:"Hong"
+            },      // 쉼표도 해주면서 구분
+            age: 20,
+            isAdult: true,
+            printInfo:function() {  // 함수 -> 객체에서는 메서드라고 함
+                console.log('printInfo');
+            }
+        };
+        const person3 = {   //객체의 키는 문자열로 작성하나, 
+                            //큰따옴표 , 작은 따옴표 생략 가능
+                            //키에 공백 들어가면 큰따옴표, 작은 따옴표
+            "phone number": "010-1234-5678"
+        };
+
+    </script>
+</body>
+</html>
