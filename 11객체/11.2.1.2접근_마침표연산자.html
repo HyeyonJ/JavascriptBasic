@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name: {
+                firstName:"Gildong",
+                lastName:"Hong"
+            },
+            age:20,
+            likes:["apple","samsung"],
+            printHello:function(){
+                return "hello";
+            }, 
+            "phone number":"010-1234-5678"
+        };
+        console.log(person.name.lastName); //Hong
+        console.log(person.age);           //20
+        console.log(person.likes[0]);      //apple
+        console.log(person.printHello());  //hello
+        // 마침표 연산자 사용시 큰따옴표, 작은따옴표 적으면 오류
+        //console.log(person."name"); //오류 발생
+        // 객체 키 식별자에 공백이 있을 시 대괄호 연산자로만 접근 가능
+        console.log(person["phone number"]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name:"Hong Gildong",
+            age:20
+        };
+        console.log(person["name"]);    // Hong GilDong
+        console.log(person["age"]);     // 20
+
+        const person2 = {
+            name : {
+                firstName: "Gildong",
+                lastName: "Hong"
+            },
+            likes:["apple","samsung"],
+            printHello:function(){
+                return "hello";
+            }
+        };
+        //객체 리터럴 속성에 접근:
+        console.log(person2["name"]);    
+        //          접근한 값도 객체 이므로 다시 대괄호 연산자를 사용해 접근
+        console.log(person2["name"]["firstName"]);   //Gildong
+        // 배열 요소에 접근: 대괄호 연산자 + 인덱스 사용
+        console.log(person2["likes"][0]);    //apple
+        console.log(person2["likes"][1]);  //samsung 
+        // 함수 호출(속성값이 함수일 때)
+        console.log(person2["printHello"]());   //hello
+    </script>
+</body>
+</html>
