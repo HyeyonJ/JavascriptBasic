@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const pw = "124";
+        if(pw.length< 4) {
+            console.log("비밀번호는 최소 4자리 이상 입력해 주세요.");
+        }
+
+        const email = "test!naver.com";
+        if(email.includes("@") === false){
+            console.log("올바른 이메일 형식이 아닙니다.");
+        }
+        // 특정 문자열이 포함되어있는지 확인
+        //  indexOf() -> 특정 문자열과 일치하는 첫 번째 문자의
+        //               인덱스를 반환. 찾지 못하면 -1 반환
+        const email2 = "text!naver.com";
+        if(email.indexOf("@") === 1) {
+            console.log("올바른 이메일 형식이 아닙니다.")
+        }
+    </script>
+</body>
+</html>

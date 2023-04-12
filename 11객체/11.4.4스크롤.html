@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 메서드 몇번 호출하더라도 가로는 100px, 세로는 200px의 위치로 스크롤 이동
+        window.scrollTo(100, 200);
+        // 웹브라우저 스크롤의 현재 위치에서 상대적인 위치로 움직이기 때문에 
+        // 메서드를 호출할 때마다 웹 브라우저의 스크롤이 가로 방향으로 100px, 세로 방향으로 200px 계속 이동
+        window.scrollBy(100, 200);
+
+        // 객체 리터럴을 전달 받기 가능
+        window.scrollTo({left:100, top:200});
+        window.scrollBy({left:100, top:200});
+
+        // 추가로 behavior 속성값을 smooth로 하기. 엄청 부드러워 짐.
+        window.scrollTo({top:4000, behavior:'smooth'});
+        window.scrollBy({top:600, behavior:'smooth'});
+    </script>
+</body>
+</html>

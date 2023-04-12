@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 변수에 할당된 객체에 속성 추가 하거나 값을 변경하는 것 가능
+        // 변수 입장에서는 데이터를 재할당하는 것이 아님.
+        const person = {
+            name: "Hong Gildong"
+        };
+        person.name = "Hong";
+
+        // 변수에 다른 객체 재할당 시 오류 발생
+        const person2 = {
+            name:"Hong Gildong"
+        };
+        person = {
+            name: "sucoding"
+        };  // TypeError: Assignment to constant variable
+
+        // 변수 끼리 데이터 복사 시
+        const person = {
+            name: "Hong Gildong"
+        };
+        const copyPerson = person; // 변수 person에 할당된 객체를 변수 copyPerson에 복사
+        person.name = "Hong"; // 변수 person에 할당된 객체의 값을 변경
+        // -> 객체가 변수에 할당될 때 변수는 주소 값만 가지고 있어서 복사할 때도
+        // 주소 값만을 복사하기 때문. 따라서 두 변수는 같은 주소 값을 가지게 됨. 
+        // -> 바라보는 원본 데이터의 위치가 같음.
+        console.log(person.name); // Hong
+        console.log(copyPerson.name); //Hong
+    </script>
+</body>
+</html>

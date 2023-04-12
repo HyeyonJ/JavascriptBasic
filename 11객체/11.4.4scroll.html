@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 3000px;
+            height: 3000px;
+            background:linear-gradient(yellow, grey);
+        }
+        div {
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <button onclick="scTo()">ScrollTo</button>
+    <button onclick="scBy()">ScrollBy</button>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, et vel, dignissimos ipsa voluptatum aperiam itaque quibusdam magni sunt provident assumenda ullam ducimus impedit alias, iure fuga at accusamus suscipit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, et vel, dignissimos ipsa voluptatum aperiam itaque quibusdam magni sunt provident assumenda ullam ducimus impedit alias, iure fuga at accusamus suscipit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, et vel, dignissimos ipsa voluptatum aperiam itaque quibusdam magni sunt provident assumenda ullam ducimus impedit alias, iure fuga at accusamus suscipit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, et vel, dignissimos ipsa voluptatum aperiam itaque quibusdam magni sunt provident assumenda ullam ducimus impedit alias, iure fuga at accusamus suscipit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, et vel, dignissimos ipsa voluptatum aperiam itaque quibusdam magni sunt provident assumenda ullam ducimus impedit alias, iure fuga at accusamus suscipit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, et vel, dignissimos ipsa voluptatum aperiam itaque quibusdam magni sunt provident assumenda ullam ducimus impedit alias, iure fuga at accusamus suscipit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, et vel, dignissimos ipsa voluptatum aperiam itaque quibusdam magni sunt provident assumenda ullam ducimus impedit alias, iure fuga at accusamus suscipit.</p>
+
+
+    <script>
+        function scTo(){
+            window.scrollTo({left:100, top:200, behavior:'smooth'});
+        }
+
+        function scBy(){
+            window.scrollBy(100, 200);
+        }
+    </script>
+</body>
+</html>

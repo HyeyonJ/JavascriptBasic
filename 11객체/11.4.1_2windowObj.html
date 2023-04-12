@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="printInfo()">속성보기</button>
+    <button onclick="popup()">팝업</button>
+    <button onClick="makeAlertTest()">경고창 띄우기</button>
+    <button onClick="PromptTest()">프롬프트 확인하기</button>
+    <button onClick="confirmTest()">컨펌 확인하기</button>
+    
+    <script>
+         function confirmTest() {
+            let inputConfirm = confirm('진행?');
+            console.log(inputConfirm); 
+        }
+
+        function PromptTest() {
+            let inputPrompt = prompt('아무거나 입력해보세요.');
+            console.log(inputPrompt); 
+        }
+
+        function makeAlertTest() {
+            let inputText = alert('경고장');
+            console.log(inputText);
+        }
+
+        function popup() {
+            window.open('popup.html', '팝업', 'width=200, height=200');
+        }
+
+        function printInfo() {
+            console.log('printInfo');
+            console.log(`웹 브라우저의 너비: ${window.innerWidth}`);
+            console.log(`웹 브라우저의 높이: ${window.innerHeight}`);
+            console.log(`웹 브라우저 창의 너비: ${window.outerWidht}`);
+            console.log(`웹 브라우저 창의 높이: ${window.outerHeight}`);
+            console.log(`웹 브라우저 창 위쪽 면과 모니터 사이의 간격: ${window.screenTop}/${window.screenY}`);
+            console.log(`웹 브라우저 창 왼쪽 면과 모니터 사이의 간격: ${window.screenLeft}/${window.screenX}`);
+            console.log(`웹 브라우저 창의 스크롤 가로 위치: ${window.scrollX}`);
+            console.log(`웹 브라우저 창의 스크롤 세로 위치: ${window.scrollY}`); 
+        }
+        
+    </script>
+
+</body>
+</html>

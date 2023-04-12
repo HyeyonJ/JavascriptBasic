@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // length 속성 
+        const arr1 = [10, 20, 30];
+        for(let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+        // 파괴적 메서드 : push(), pop(), unshift(), shift()
+        const arr2 = [10, 20, 30, 40];
+        arr2.push(50);                  // 배열 맨 뒤에 50 추가
+        console.log(arr2);              // [10, 20, 30, 40, 50]
+        arr2.pop();                     // 배열 맨 뒤에서 요소 추출
+        console.log(arr2);              // [10, 20, 30, 40]
+        arr2.unshift(0);                // 배열 맨 앞에 0 추가
+        console.log(arr2);              // [0, 10, 20, 30, 40]
+        arr2.shift();                   // 배열 맨 앞에서 요소 추출
+        console.log(arr2);              // [10, 20, 30, 40]
+        // 비파괴적 베서드 : forEach() -> 배열 안의 요소를 순회하며
+        //  콜백 함수인 function(v)를 호출해 접근한 요소의 값 출력.
+        //  반복문으로 배열 요소에 접근하는 것과 비슷한 기능 제공
+        const arr3 = [10, 20, 30, 40];
+        arr3.forEach(function(v) {
+            console.log(v);
+        });
+        console.log(arr3);              // 10 20 30 40 
+    </script>
+</body>
+</html>
