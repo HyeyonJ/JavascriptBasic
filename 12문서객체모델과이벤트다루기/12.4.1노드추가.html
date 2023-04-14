@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Node</title>
+</head>
+<body>
+    <script>
+        // 1. 요소 노드 생성하기
+        const aEl = document.createElement("a");
+        // 2. 생성한 a 요소 노드를 body 요소 노드의 자식 노드로 연결
+        document.body.appendChild(aEl);
+        // 1-2. 텍스트 노드 생성
+        const txtEl = document.createTextNode("흐음");
+        document.querySelector("a").appendChild(txtEl);
+        // 1-3. 속성 노드 생성하기
+        const hreAttr = document.createAttribute("href");
+        //      생성된 속성 노드에 값을 추가할 시 속성 노드의 value 속성에 값 할당
+        hreAttr.value = "https://www.naver.com";
+        //      생성한 속성 노드를 setAttributeNode() 메서드로 요소 노드와 연결.
+        //      속성 노드는 a요소 노드의 자식 노드로 추가하는 것이 아님.
+        document.querySelector("a").setAttributeNode(hrefAttr);
+    </script>
+</body>
+</html>

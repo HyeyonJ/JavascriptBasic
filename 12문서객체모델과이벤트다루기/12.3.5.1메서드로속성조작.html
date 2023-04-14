@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- getAttribute() 메서드 : 선택된 요소 노드이 속성값을 가져오고 싶을 때 -->
+    <a href="https://www.naver.com">네이버</a>
+    <script>
+        // querySelector() 메서드로 a태그에 해당하는 요소 노드 선택.
+        const aEl = document.querySelector("a");
+        // getAttribute() 메서드로 href 속성값을 가져옴.
+        const href = aEl.getAttribute("href");
+        // 개발자 도구의 콘솔창 : href 속성값이 출력됨.
+        console.log(href);
+        
+        // 속상값 새로 설정하고 싶을 시 setAttribute() 메서드 사용
+        aEl.setAttribute("href", "https://wwww.google.com");
+        aEl.innerText = "구글";
+        // 바꾼 속성값을 적용해 새 창으로 열리게 하기
+        aEl.setAttribute("target", "_blank");
+    </script>
+
+</body>
+</html>

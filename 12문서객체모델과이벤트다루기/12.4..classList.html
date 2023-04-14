@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-color{
+            color: red;
+        }
+        .fz20{
+            font-size:20px;
+        }
+        .blue-color{
+            color:blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <p id = "text">text</p>
+    <button onclick = "changeColor()">색변경 레드</button>
+    <button onclick = "changeColor2()">색변경 블루</button>
+    <!-- 클릭할 때 마다 빨간색/ 검은색 -->
+    <button onclick="changeFontSize()">크기변경</button>
+    <button onclick="setAttr()">속성변경</button>
+    <!-- 클릭할 때 마다 20px / 16px -->
+    <p><a href="http://www.naver.com" target="_blank">사이트 경로</a></p>
+
+    <script>
+        const el2 = document.querySelector("a");
+        console.log(el2.getAttribute("href"));//------------이거 경로에 안나옴 물어보자
+        el2.setAttribute("href", "https://google.com");
+
+        const el1 = document.getElementById('text');
+
+        function setAtrr(){
+            el1.setAttribute("class", "red-color")
+        }
+
+        function changeColor(){
+            el1.classList.toggle('red-color');
+        }
+        
+        function changeColor2(){
+            el1.classList.toggle('blue-color');
+        }
+
+        function changeFontSize(){
+            el1.classList.toggle('fz20');
+        }
+
+        
+        // el1.classList.toggle('red-color');
+        // el1.classList.toggle('red-color');
+        // el1.classList.add("red-color");
+        // console.log(el1.classList);
+        // el1.classList.add("fz20");
+        // console.log(el1.classList);
+        // el1.classList.remove('fz20');
+        // console.log(el1.classList);
+    </script>
+</body>
+</html>

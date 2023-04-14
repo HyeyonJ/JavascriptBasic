@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="title">Hello, <span style="display:none;">Javascript!</span></p>
+
+    <p id="textContent"></p>
+    <p id="innerText"></p>
+    <p id="innerHTML"></p>
+
+    <script>
+        /// 접근한 노드의 콘텐츠를 가지고 옴
+        //Hello, Javascript!
+        const el1 = document.getElementById( "title" ).textContent; 
+
+        // Hello,
+        const el2 = document.getElementById( "title" ).innerText; 
+
+        // Hello, <span style=display:none;">Javascript</span>"
+        const el3 = document.getElementById( "title" ).innerHTML; 
+==============엥 왜 안되지
+        /// 속성에 값을 할당하면 각 노드의 콘텐츠를 바꿀 수 있음
+        const el4 = document.querySelector("#textContent").textContent = `<strong>textContent</strong> 속성`;
+        console.log(el4);
+
+        const el5 = document.querySelector("#innerText").innerText= `<strong>innerText</strong> 속성`;
+        console.log(el5);
+
+        const el6 = docuemnt.querySelector("#innerHTML").innerHTML = `<strong>innerHTML</strong> 속성`;
+        console.log(el6);
+
+        
+    </script>
+</body>
+</html>

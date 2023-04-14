@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pNode {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <p id="pNodeInDiv">pNodeInDiv</p>
+    </div>
+    <p id="pNode">pNode</p>
+    <p class = "pClass">pClass1</p>
+    <p class = "pClass">pClass2</p>
+    
+    <script>
+        console.log(document.children[0].children[1].children[1].nextElementSibling);
+        // DOM 객체 -> tree 구조 
+        // console.log(document.childNodes[1].lastChild.childNodes[1].childNodes[2]);
+        // console.log(document.childNodes[1].lastChild.childNodes[1].firstElementChild);
+        // console.log(document.childNodes[1].lastChild.childNodes[1].children[0]);
+        // console.log(document.childNodes[1].lastChild);
+        // console.log(document.childNodes[1].lastChild.childNodes[1]);
+
+        // const e1 = document.querySelector("pNode");
+        // console.log(e1);
+        // const e2 = document.querySelector('#pNodeInDiv');
+        // console.log(e2);
+        // const e3 = document.querySelectorAll('.pClass');
+        // console.log(e3);
+        // const elmt1 = document.getElementById('pNode');
+        // console.log(elmt1);
+        // const elmt2 = document.getElementById('pNodeInDiv');
+        // console.log(elmt2);
+        // const elmt3 = document.getElementsByClassName('container');
+        // console.log(elmt3);
+
+        // const elmt4 = document.getElementsByClassName('pClass');// 요소를 2개 가지고 있는 친구
+        // console.log(elmt4);
+        // // console.log(elmt4[0]);
+        // // console.log(elmt4[1]);
+
+        // for(let elm in elmt4){
+        //     console.log(elmt4[elm]);
+        // }
+        // for(let elm of elmt4){
+        //     console.log(elm);
+        // }
+    </script>
+</body>
+</html>

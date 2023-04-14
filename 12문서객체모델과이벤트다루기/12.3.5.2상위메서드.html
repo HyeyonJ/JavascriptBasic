@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-color{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.naver.com" data-link="네이버">네이버</a>
+    <script>
+        const aEl = document.querySelector("a");
+        aEl.setAttribute("data-link", "이지톡");
+        aEl.setAttribute("class", "red-color");
+        // removeAttribute() 메서드 사용 시 요소 노드 속성 제거 가능
+        aEl.removeAttribute("class"); // class 속성 삭제
+    </script>
+</body>
+</html>

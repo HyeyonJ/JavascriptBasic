@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box-1">
+        <p class="text">text-1</p>
+        <p class="text">text-2</p>
+    </div>
+    <div class="box-2">
+        <p class="text">text-3</p>
+        <p class="text">text-4</p>
+    </div>
+
+    <script>
+        // HTML 문서 class 속성값이 box-1인 요소 노드 선택
+        const el = document.querySelector(".box-1");
+       
+        // HTML 문서 class 속성값이 box-1인 요소 하위에 있는 p태그
+        // 콘솔도 확인
+        const el2 = document.getElementsByClassName("box-1")[0].children;
+        console.log(el2);
+        
+        // CSS 선택자를 사용하는 querySelectorAll()
+        const e13 = document.querySelectorAll(".box-1 .text");
+        console.log(el3)
+    </script>
+</body>
+</html>

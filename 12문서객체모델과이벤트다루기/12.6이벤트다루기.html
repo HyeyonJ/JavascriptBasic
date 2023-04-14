@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="loginId" placeholder="아이디">
+    <br>
+    <input type="password" id="loginPw" placeholder="비밀번호">
+    <br>
+    <button id= "btnLogin" onclick="tryLogin()">로그인 시도</button>
+    <br>
+
+
+
+    <!-- <button onclick="alert('click')">클릭</button>
+    <button onclick="btnClicked()">클릭(함수형)</button>
+    <button id="proBtn">클릭(프로퍼티)</button>
+    <button id="lisBtn">클릭(리스너)</button>
+    <button ondbclick="alert('더블클릭')">더블클릭</button> -->
+
+    <script>
+
+        inputId.addEventListener('keydown', function(e){
+            // 함수 동작
+            //inputId 에서 keydown 이 발생하면 지금 이부분 수행
+            // console.log(e); //정보출력
+            console.log(e.key);
+            // console.log('키가 눌림');
+            // 무슨 키가 눌렸는지 정보 매개변수 e에 있다
+            // enter가 눌리면 비밀번호 칸으로 이동
+            // inputId.focus();
+            if(e.keycode === 13){
+                console.log('엔터눌림');
+            }
+        });
+        // const inputId = documnet.getElementById('loginId');
+        // const inputPw = document.getElementById('loginPw');
+
+        // inputId.addEventListener('keydown)
+
+        // inputId.addEventListener('kedown', function()
+        // {
+        //     console.log('키가 눌림');/////////////// 이거 입력이 눌릴 때마다 키가 눌리고 , 옆에 키가 눌림 이라고 
+        //     // 숫자가 옆에 다가 키가 눌리는게 아ㅏㅏㅏㅏㅏㅏㅏㅏ 뭐가 왔는지 해볼라면, 전체 눌린 키워드를 알려면
+        //     //i asdj ;flkajs;dkfjkjwrhetop키가 하나 눌릴 때 마다 뭐가 눌렸는지 알아보기 위함. 이벤트가 로
+        // })
+
+        // inputPw.onfocus = () => {
+        //     console.log('비밀번호 input 포커싱');
+        // }
+
+
+
+        // function btnClicked(){
+        //     alert('클릭(함수형)');
+        // }
+
+        // function btnClicked(){
+        //     alert('클릭(프로퍼티)');
+        // }
+
+        // const btn1 = document.getElementById('proBtn');
+        // btn1.onclick = btnClicked;//기존에 만들어 진 함수를 그대로 사용해도 됨.
+
+    //    // -------------------------------------------이거 안됨!!!!!!!!!!---------------------------------------
+    //     btn1.onmouseover = () => {
+    //         alert('마우스가 올라옴');
+    //     }
+
+    //     btn1.onclick = function() {
+    //         alert('클릭(프로퍼티) function()');
+    //     }
+    //     btn1.onclick = () => {
+    //         alert('클릭(프로퍼티) ()=>방식');
+    //     }
+
+    //     function btnLisClicked() {
+    //         alert('클릭(리스너)');
+    //     }
+
+    //     const lisBtn = document.getElementById('lisBtn');
+    //     lisBtn.addEventListener('cilck', btnLisClicked);
+
+    //     lisBtn.addEventListener('cilck', function(){
+    //         alert('클릭(리스너)함수 선언');
+    //     });
+    //     //----------------- 이거 위에 있는거 부터 아래 있는거 같은 말.
+    //     // lisBtn1.addEventListener('click', () => {
+    //     //     alert('클릭(리스너) ()=> 함수 선언')
+    //     // });
+
+    </script>
+    
+</body>
+</html>

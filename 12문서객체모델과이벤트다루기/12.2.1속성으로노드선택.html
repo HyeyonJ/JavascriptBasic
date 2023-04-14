@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //이건 좀 이상한 구조지만, 그냥 이렇게 가능 하다는 것.
+        //document 객체로 접근할 수 있는 html 노드 이동 <DOCTYPE html>
+        document.firstChild; 
+        //첫번째 자식 노드로 이동하고 싶다하면 html 
+        document.firstElementChild; 
+
+        //노드 탐색 속성은 연속으로 사용 가능
+        document.childNodes[1].firstElementChild.firstElementChild.nextElemnetSibling;
+    </script>
+</body>
+</html>

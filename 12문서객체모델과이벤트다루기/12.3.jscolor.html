@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="red">red</p>
+    <p class="green">green</p>
+    <p class="green">green</p>
+    <p class="blue">blue</p>
+    <!-- id는 문서 내에서 유니크한 식별자이고, class는 여러 대상에 적용하기 위한 식별자.. -->
+    <script> 
+    // 요소 접근해서 color 바꾸기.
+    // document.querySelector('#red').style.color = 'red'
+
+    // const greens = document.querySelectorAll('.green');
+    // for(let itm of greens){
+    //     itm.style.color = 'green';
+    // }
+    // const blues = document.getXlementsByClassName('blue');
+    // for(let itm of blues) {
+    //     itm.style.color = 'blue';
+    // }
+    
+    const redEl = document.querySelector("#red");
+    console.log(redEl);
+    redEl.style.color = "red";
+
+    const greens = document.querySelectorAll(".green");
+    console.log(greens);
+    // green[0].style.color = "green";
+    // green[2].style.color = "green";
+    // [p.green.style.color, p.green.style.color].style.color = 'green';
+    
+    for(let i=0; i<greens.length; i++){
+        greens[i].style.color = 'green';
+    }
+    // for(let itm of greens){
+    //     itm.style.color = 'green';
+    // }
+
+    const blues = document.getElementsByClassName('blue');
+    console.log(blues);
+    for(let itm of blues){
+        itm.style.color = 'blue';
+    }
+
+
+    // document.querySelector('#green').green = `<strong>strong</strong> 속성`;
+    // green.style.color = "green";
+
+    //document.querySelector('')
+    //documen.queySelctor('#red').red;
+    // const red1 = document.querySelector("p");
+    // red.style.color = "red";
+
+    // const green2 = document.getElementById('class');
+    // green.style.color = "green";
+
+    // const blue = document.getElementsByClassName('blue');
+    // blue.style.color = "blue";
+
+    //const <p> = document.getElementById('title'); -->
+     // el1.style.color = "red"; -->
+
+    </script>
+</body>
+</html>

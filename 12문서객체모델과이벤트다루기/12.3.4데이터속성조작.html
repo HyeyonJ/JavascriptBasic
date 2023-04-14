@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- data-* 속성이 적용된 HTML 요소노드 선택해 data 속성값 출력 -->
+    <button data-cnt="10">가방 구매</button>
+    <button data-cnt="0">신발 구매</button>
+    <script>
+        const buttonEls = document.querySelectorAll("button");
+        buttonEls.forEach((el) => {
+            console.log(el.dataset);        // 실행결과 10 0
+            el.dataset.cnt = 50;            // 속성에 값 할당. data-cnt의 값을 바꿀 수 있음.
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .red-color{
+            color:red;
+        }
+
+        .fz20{
+            font-size:20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--스타일 속성의 불편함!!     
+    <p>text</p>
+
+    <script>
+        const pEl = document.querySelector("p");
+
+        pEl.style.color = "red";
+        pEl.style.fontsize = "20px";
+        pEl.style.fontWeight = "bold";
+        pEl.style.lineHeight = "1";
+    </script> -->
+
+    <p id="text">text</p>
+
+    <script>
+        const pEl = document.querySelector("#text"); //노드 선택
+        // 클래스 속성값 추가
+        pEl.classList.add("red-color");
+        pEl.classList.add("fz20")
+        console.log(pEl);
+        // 클래스 속성값 한번에 작성
+        const pEl2 = document.querySelector("#text");
+        pEl2.classList.add("red-color" , "fz20");
+        console.log(pEl2);
+        // 클래스 속성의 속성값 삭제
+        pEl2.classList.remove( "red-color", "fz20" );
+        console.log(pEl2);
+
+        // toggle 사용
+        const pEl3 = document.querySelector("text");
+        // 1초 마다 toggle() 메서드 반복 실행
+        setInterval (function() { //setInterval = window 객체의 메서드
+            pEl3.classList.toggle("red-color");
+        }, 1000);
+
+
+    </script>
+</body>
+</html>

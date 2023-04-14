@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" class="fz20">link</a>
+    <script>
+        const aEl = document.querySelector("a");
+        // a 태그의 기존 class 속성값을 보존하면서 red-color 값 추가
+        aEl.classList.add("red-color");
+        // a 태그의 기존 class 속성값을 보존하지 않고 red-color 값 설정
+        aEl.setAttribute("red-color");
+    </script>
+</body>
+</html>
