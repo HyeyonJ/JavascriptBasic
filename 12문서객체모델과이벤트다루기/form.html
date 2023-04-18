@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<br lang="en">-------------------------------------이거 수정 필요
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="frm1">
+        <input type="text" id="loginId" placeholder="아이디">
+        <input type="password" id="loginPw" placeholder="비밀번호">
+        <lbael for="uname">이름</lbael>
+        <input type="text" id="uname" name="uname">
+        <label for="age">나이</label>
+        <input type="text" id="age" name="age">
+        <label for= "gender">성별</label>
+        <select id="gender" name="gender">
+            <option value="male" >male</option>
+            <option value="female" selected>female</option>
+        </select>
+        <br>
+        <input type="radio" name="group" value="1">1그룹
+        <input type="radio" name="group" value="2">2그룹
+        <br>
+        <input type="radio" name="group" value="3">3그룹
+        <input type="radio" name="group" value="4">4그룹
+        <br>
+        <input type="checkbox" value="walk">도보
+        <input type="checkbox" value="bus">버스
+        <input type="checkbox" value="train">기차
+        <button type="submit" onclick="submitFrm1()">전송</button>
+    </form>
+
+    <button onclick="checkBefore()">전송 전 확인</button>
+
+    <script>
+
+
+        function checkBefore(){
+            //console.log(document.frm1.uname.value);
+            //console.log(document.frm1.age.value);
+            //document.querySelectorAll('#gender > option');
+            const options= document.querySelectorAll('#gender > option');
+            //console.log(options);
+            // option중에서 선택이 된 옵션의 value만 출력
+            for(let i=0; i<options.length; i++){
+                if( options[i].selected === true) {
+                    console.log(options[i].value);
+                }
+            }
+
+            //radio 접근 선택된 라디오의 value 을 출력.
+            const radios = document.querySelectorAll('input[type="radio"]');
+            
+            for(let rd of radios){
+                if( rd.checked === true){
+                    console.log(rd.value);
+                }
+            }
+
+            //checkbox
+            const chboxes = document.querySelectorAll('input[type="checkbox"]');
+
+            for(let cb of chboxes){
+                if (cb.checked === true) {
+                    console.log(cb.value);
+                }
+            }
+            
+        }
+
+        function submitFrm1(){
+            //전송하기 위한 작업
+            event.priventDefault();
+            console.log('button clicked');
+        }
+
+        // function submitFrm1(){
+        //     //전송하기 위한 작업
+        //     console.log('button clicked');
+        // }
+        // console.log(document.forms.frm1);
+        // console.log(document.getElementById('age'));
+        // console.log(document.frm1.age);
+        // document.querySelector('form > input:nth-of-type(2)')
+        //console.log(document.forms[3]);
+
+        // console.log(document.forms);
+        // console.log(document.forms[0]);
+        // console.log(document.forms[1]);
+        // console.log(document.body.children);
+
+    </script>
+
+
+<body>
+</body>
+</html>
